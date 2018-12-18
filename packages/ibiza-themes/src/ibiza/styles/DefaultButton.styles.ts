@@ -18,7 +18,7 @@ export const DefaultButtonStyles = (extendedTheme: IExtendedTheme): Partial<IBut
     rootHovered: {
       selectors: {
         '.ms-Button--primary': {
-          backgroundColor: CommunicationColors.shade10
+          backgroundColor: 'rgba(255, 140, 0, .5)'
         }
       }
     },
@@ -36,7 +36,7 @@ export const DefaultButtonStyles = (extendedTheme: IExtendedTheme): Partial<IBut
       background: 'transparent',
       borderTopRightRadius: borderRadius,
       borderBottomRightRadius: borderRadius,
-      border: `1px solid ${NeutralColors.gray110}`,
+      border: `40px solid ${NeutralColors.gray110}`,
       borderLeft: 'none'
     },
     splitButtonContainer: {
