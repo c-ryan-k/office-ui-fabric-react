@@ -14,6 +14,7 @@ export const TagPickerStyles = (props: IBasePickerStyleProps): Partial<IBasePick
     root: {
       fontSize: FontSizes.size12,
       border: `${StyleConstants.borderWidth} solid ${StyleConstants.transparent}`,
+      backgroundColor: StyleConstants.transparent,
       selectors: {
         '[disabled]': {
           backgroundColor: semanticColors.buttonBackgroundDisabled,
@@ -23,13 +24,13 @@ export const TagPickerStyles = (props: IBasePickerStyleProps): Partial<IBasePick
     },
     input: {
       color: extendedSemanticColors.inputText,
-      backgroundColor: semanticColors.inputBackground,
+      backgroundColor: StyleConstants.transparent,
       border: 'none'
     },
     itemsWrapper: {
       color: semanticColors.bodyText,
       border: 'none',
-      backgroundColor: semanticColors.inputBackground
+      backgroundColor: StyleConstants.transparent
     },
     text: {
       border: `${StyleConstants.borderWidth} solid ${extendedSemanticColors.controlOutline}`
