@@ -84,7 +84,8 @@ export const DropdownStyles = (props: IDropdownStyleProps): Partial<IDropdownSty
         selectors: {
           span: {
             lineHeight: StyleConstants.inputControlHeightInner,
-            verticalAlign: 'top'
+            position: 'absolute',
+            top: '1px'
           }
         }
       },
