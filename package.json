@@ -12,7 +12,7 @@
     "_rushBuild": "node common/scripts/install-run-rush.js build",
     "_rushBuildToExperiments": "node common/scripts/install-run-rush.js build --to @uifabric/experiments",
     "_rushRebuild": "node common/scripts/install-run-rush.js rebuild --production --verbose --lint",
-    "_rushRebuildCi": "node common/scripts/install-run-rush.js rebuild --verbose --lint",
+    "_rushRebuildCi": "node common/scripts/install-run-rush.js rebuild --verbose --lint --to @uifabric/azure-themes",
     "_rushRebuildFast": "node common/scripts/install-run-rush.js rebuild",
     "postinstall": "npm run _rushInstall && npm run _rushBuildToExperiments -- --npm-install-mode",
     "test": "npm run _rushBuild",
