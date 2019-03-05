@@ -2,6 +2,87 @@
   "name": "@uifabric/example-app-base",
   "entries": [
     {
+      "version": "6.12.0",
+      "tag": "@uifabric/example-app-base_v6.12.0",
+      "date": "Tue, 05 Mar 2019 04:25:07 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "remove not null assertion for optional prop",
+            "author": "Natalie Ethell <naethell@microsoft.com>",
+            "commit": "ce2154375e321a95b86d0e7bb9be491ad933e7fc"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"office-ui-fabric-react\" from `>=6.149.0 <7.0.0` to `>=6.150.0 <7.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.11.8",
+      "tag": "@uifabric/example-app-base_v6.11.8",
+      "date": "Tue, 26 Feb 2019 22:45:29 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Feedback button: Increase styles specificity to override MWF conflicts.",
+            "author": "Peter Jahn <pejahn@microsoft.com>",
+            "commit": "ab29c5f3b3a0e01c2c660dcd581b8a1978ab47c8"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"office-ui-fabric-react\" from `>=6.144.0 <7.0.0` to `>=6.145.0 <7.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.11.7",
+      "tag": "@uifabric/example-app-base_v6.11.7",
+      "date": "Mon, 25 Feb 2019 13:31:08 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Tweaking the package json to remove uneeded side effects, which helps with bundling.",
+            "author": "David Zearing <dzearing@microsoft.com>",
+            "commit": "9e04bf432ee5962ba9a7e6eeed5b598eed1661be"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"office-ui-fabric-react\" from `>=6.143.0 <7.0.0` to `>=6.143.1 <7.0.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "6.11.6",
+      "tag": "@uifabric/example-app-base_v6.11.6",
+      "date": "Thu, 14 Feb 2019 13:34:54 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fluent folder cover; updated metadata font color; added yellowDark color variable",
+            "author": "Xi Huang <dayumikoda@gmail.com>",
+            "commit": "7c1a7f9f8d5157f6cd59a568a89019d816c75e9b"
+          },
+          {
+            "comment": "Switch PivotItems to use headerText not linkText",
+            "author": "Elizabeth Craig <ecraig12345@gmail.com>",
+            "commit": "43e45d90f0c5cad56cf1b35c8a41361176a30b40"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"office-ui-fabric-react\" from `>=6.138.1 <7.0.0` to `>=6.139.0 <7.0.0`"
+          }
+        ]
+      }
+    },
+    {
       "version": "6.11.5",
       "tag": "@uifabric/example-app-base_v6.11.5",
       "date": "Thu, 31 Jan 2019 20:10:48 GMT",

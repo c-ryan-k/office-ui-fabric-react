@@ -70,13 +70,13 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
     autoAdjustHeight
   } = props;
 
-  const { semanticColors, palette } = theme;
+  const { semanticColors } = theme;
 
   const classNames = getGlobalClassNames(globalClassNames, theme);
 
   const fieldPrefixSuffix: IStyle = {
-    background: palette.neutralLighter,
-    color: palette.neutralSecondary,
+    background: semanticColors.disabledBackground, // Suffix/Prefix are not editable so the disabled slot perfectly fits.
+    color: !disabled ? semanticColors.inputPlaceholderText : semanticColors.disabledText,
     display: 'flex',
     alignItems: 'center',
     padding: '0 10px',
@@ -87,6 +87,7 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
   return {
     root: [
       classNames.root,
+      theme.fonts.medium,
       required && classNames.required,
       disabled && classNames.disabled,
       focused && classNames.active,
@@ -158,7 +159,8 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
       normalize,
       {
         border: `1px solid ${semanticColors.inputBorder}`,
-        background: semanticColors.bodyBackground,
+        background: semanticColors.inputBackground,
+        cursor: 'text',
         height: 32,
         display: 'flex',
         flexDirection: 'row',
@@ -201,7 +203,8 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
       },
       disabled && {
         backgroundColor: semanticColors.disabledBackground,
-        borderColor: semanticColors.disabledBackground
+        borderColor: semanticColors.disabledBackground,
+        cursor: 'default'
       },
       underlined && {
         flex: '1 1 0px',
@@ -253,6 +256,7 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
         }
     ],
     field: [
+      theme.fonts.medium,
       classNames.field,
       normalize,
       {
@@ -261,7 +265,7 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
         border: 'none',
         background: 'none',
         backgroundColor: 'transparent',
-        color: semanticColors.bodyText,
+        color: semanticColors.inputText,
         padding: '0 12px',
         width: '100%',
         minWidth: 0,
@@ -272,14 +276,20 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
           '::-ms-clear': {
             display: 'none'
           },
-          '::placeholder': {
-            color: semanticColors.inputPlaceholderText,
-            opacity: 1
-          },
-          ':-ms-input-placeholder': {
-            color: semanticColors.inputPlaceholderText,
-            opacity: 1
-          }
+          '::placeholder': [
+            theme.fonts.medium,
+            {
+              color: semanticColors.inputPlaceholderText,
+              opacity: 1
+            }
+          ],
+          ':-ms-input-placeholder': [
+            theme.fonts.medium,
+            {
+              color: semanticColors.inputPlaceholderText,
+              opacity: 1
+            }
+          ]
         }
       },
       multiline &&
@@ -310,16 +320,20 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
         },
       disabled && {
         backgroundColor: 'transparent',
-        borderColor: 'transparent'
+        borderColor: 'transparent',
+        color: semanticColors.disabledText,
+        selectors: {
+          '::placeholder': {
+            color: semanticColors.disabledText
+          },
+          ':-ms-input-placeholder': {
+            color: semanticColors.disabledText
+          }
+        }
       },
       underlined && {
         textAlign: 'left'
       },
-      underlined &&
-        disabled && {
-          backgroundColor: 'transparent',
-          color: semanticColors.disabledText
-        },
       focused &&
         !borderless && {
           selectors: {
@@ -354,6 +368,9 @@ export function getStyles(props: ITextFieldStyleProps): ITextFieldStyles {
         top: 'auto',
         fontSize: 16,
         lineHeight: 18
+      },
+      disabled && {
+        color: semanticColors.disabledText
       },
       iconClass
     ],

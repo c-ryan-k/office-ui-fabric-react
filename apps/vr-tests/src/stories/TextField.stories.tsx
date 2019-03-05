@@ -22,30 +22,55 @@ storiesOf('TextField', module)
     </Screener>
   ))
   .addStory('Root', () => <TextField label="Standard" />)
-  .addStory('Placeholder', () => <TextField label="Standard" placeholder="Placeholder" />, { rtl: true })
+  .addStory('Placeholder', () => <TextField label="Standard" placeholder="Placeholder" />, {
+    rtl: true
+  })
   .addStory('Disabled', () => <TextField label="Disabled" disabled />)
   .addStory('Required', () => <TextField label="Required" required />)
   .addStory('Error', () => <TextField label="Error" errorMessage="Error message" />, { rtl: true })
   .addStory('Multiline', () => <TextField label="Multiline" multiline rows={4} />, { rtl: true })
-  .addStory('Multiline nonresizable', () => <TextField label="Multiline" multiline rows={4} resizable={false} />)
+  .addStory('Multiline nonresizable', () => (
+    <TextField label="Multiline" multiline rows={4} resizable={false} />
+  ))
   .addStory('Underlined', () => <TextField label="Underlined" underlined />)
-  .addStory('Borderless', () => <TextField label="Borderless" borderless placeholder="Placeholder text" />)
-  .addStory('Icon', () => <TextField styles={{ icon: { color: '#333333' } }} label="Icon" iconProps={{ iconName: 'Calendar' }} />, {
-    rtl: true
-  })
+  .addStory('Borderless', () => (
+    <TextField label="Borderless" borderless placeholder="Placeholder text" />
+  ))
   .addStory(
-    'Prefix',
+    'Icon',
     () => (
-      <TextField label="Prefix" prefix="https://" styles={{ prefix: { color: '#666666', fontFamily: 'Segoe UI', fontSize: '14px' } }} />
+      <TextField
+        styles={{ icon: { color: 'green' } }}
+        label="Green styled icon"
+        iconProps={{ iconName: 'Calendar' }}
+      />
     ),
     {
       rtl: true
     }
   )
   .addStory(
-    'Suffix',
-    () => <TextField label="Suffix" suffix=".com" styles={{ suffix: { color: '#666666', fontFamily: 'Segoe UI', fontSize: '14px' } }} />,
+    'Prefix with Value, Disabled, and Prefix Style-Override',
+    () => (
+      <TextField
+        label="Green styled prefix"
+        prefix="https://"
+        value="example.com"
+        styles={{ prefix: { color: 'green' } }}
+        disabled
+      />
+    ),
     {
       rtl: true
     }
-  );
+  )
+  .addStory(
+    'Prefix with Value, Disabled',
+    () => <TextField label="Prefix" prefix="https://" value="example.com" disabled />,
+    {
+      rtl: true
+    }
+  )
+  .addStory('Suffix', () => <TextField label="Suffix" suffix=".com" />, {
+    rtl: true
+  });

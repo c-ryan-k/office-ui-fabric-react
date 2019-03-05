@@ -104,13 +104,7 @@ export interface IGroupedListProps extends React.ClassAttributes<GroupedListBase
   onShouldVirtualize?: (props: IListProps) => boolean;
 
   /**
-   * Optional function which will be called to estimate the height (in pixels) of the given group.
-   *
-   * By default, scrolling through a large virtualized GroupedList will often "jump" due to the order
-   * in which heights are calculated. For more details, see https://github.com/OfficeDev/office-ui-fabric-react/issues/5094
-   *
-   * Pass this prop to ensure the list uses the computed height rather than cached DOM measurements,
-   * avoiding the scroll jumping issue.
+   * Optional function to override default group height calculation used by list virtualization.
    */
   getGroupHeight?: (group: IGroup, groupIndex: number) => number;
 }
@@ -295,7 +289,9 @@ export interface IGroupDividerProps {
   /** Override which allows the caller to provider a custom renderer for the GroupHeader title. */
   onRenderTitle?: IRenderFunction<IGroupHeaderProps>;
 
-  /** Props for expand/collapse button */
+  /** Props for expand/collapse button
+   * @deprecated Use {@link IGroupHeaderProps.expandButtonProps} instead.
+   */
   expandButtonProps?: React.HTMLAttributes<HTMLButtonElement>;
 
   /** Stores parent group's children. */

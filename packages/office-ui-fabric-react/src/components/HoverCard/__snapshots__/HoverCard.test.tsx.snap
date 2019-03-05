@@ -131,10 +131,10 @@ exports[`HoverCard renders ExpandingCard correctly 1`] = `
           style={
             Object {
               "maxHeight": 718,
+              "outline": "none",
               "overflowY": "hidden",
             }
           }
-          tabIndex={-1}
         >
           <div
             onFocusCapture={[Function]}
@@ -293,10 +293,10 @@ exports[`HoverCard renders PlainCard correctly 1`] = `
           style={
             Object {
               "maxHeight": 718,
+              "outline": "none",
               "overflowY": undefined,
             }
           }
-          tabIndex={-1}
         >
           <div
             onFocusCapture={[Function]}

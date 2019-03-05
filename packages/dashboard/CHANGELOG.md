@@ -1,6 +1,100 @@
 # Change Log - @uifabric/dashboard
 
-This log was last generated on Thu, 31 Jan 2019 13:36:13 GMT and should not be manually modified.
+This log was last generated on Tue, 05 Mar 2019 17:33:41 GMT and should not be manually modified.
+
+## 0.52.2
+Tue, 05 Mar 2019 17:33:41 GMT
+
+### Patches
+
+- Add type annotations based on update to "styled"
+
+## 0.52.1
+Tue, 05 Mar 2019 04:25:07 GMT
+
+### Patches
+
+- Make the stepToShow parameter take effect on footerAction
+
+## 0.52.0
+Thu, 28 Feb 2019 13:29:07 GMT
+
+### Minor changes
+
+- Implemented full parent wizard in dashboard package
+- Make titleElement optional as SetupWizard design has no title bar
+
+### Patches
+
+- first time cards not added on dashboard and onLayoutChange calling issue fixed
+
+## 0.51.0
+Wed, 27 Feb 2019 01:28:58 GMT
+
+### Minor changes
+
+- Make updates to SetupWizard and Wizard Base
+
+## 0.50.0
+Mon, 25 Feb 2019 13:31:08 GMT
+
+### Minor changes
+
+- Add panel wizard implementation
+
+### Patches
+
+- Add styling to WizardBase, refactor examples
+
+## 0.49.0
+Wed, 20 Feb 2019 13:30:29 GMT
+
+### Minor changes
+
+- Refactor of Wizard and SubwayNav Components
+
+## 0.48.0
+Fri, 15 Feb 2019 13:33:05 GMT
+
+### Minor changes
+
+- Add 'StackedBarChart' Visualization support to Recommendation Banner (MIP, Intune Recommendations will use this). Refactor existing visualizations into separate functional components.
+
+## 0.47.5
+Thu, 14 Feb 2019 13:34:54 GMT
+
+### Patches
+
+- Add Id for Thumbnail item actions
+
+## 0.47.4
+Tue, 12 Feb 2019 13:36:42 GMT
+
+### Patches
+
+- Implement Wizard base control and SetupWizard control in dashboard package
+
+## 0.47.3
+Wed, 06 Feb 2019 13:38:06 GMT
+
+### Patches
+
+- Adding SubwayNav control in Dashboard
+- Hide command bar from composite list if no commands exist
+
+## 0.47.2
+Tue, 05 Feb 2019 13:35:00 GMT
+
+### Patches
+
+- Add id's for actions and onclick handler for multicount
+
+## 0.47.1
+Mon, 04 Feb 2019 13:36:12 GMT
+
+### Patches
+
+- DetailPanel: fix content load error on L2 content mode
 
 ## 0.47.0
 Thu, 31 Jan 2019 13:36:13 GMT

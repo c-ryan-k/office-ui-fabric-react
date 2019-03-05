@@ -113,10 +113,10 @@ exports[`Tooltip renders default Tooltip correctly 1`] = `
           style={
             Object {
               "maxHeight": 750,
+              "outline": "none",
               "overflowY": undefined,
             }
           }
-          tabIndex={-1}
         >
           <div
             role="tooltip"

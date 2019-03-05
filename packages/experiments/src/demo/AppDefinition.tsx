@@ -11,16 +11,16 @@ export const AppDefinition: IAppDefinition = {
     {
       links: [
         {
-          component: require<any>('../components/Announced/AnnouncedPage').AnnouncedPage,
-          key: 'Announced',
-          name: 'Announced',
-          url: '#/examples/announced'
-        },
-        {
           component: require<any>('../components/Button/ButtonPage').ButtonPage,
           key: 'Button',
           name: 'Button',
           url: '#/examples/button'
+        },
+        {
+          component: require<any>('../components/Card/CardPage').CardPage,
+          key: 'Card',
+          name: 'Card',
+          url: '#/examples/card'
         },
         {
           component: require<any>('../components/CollapsibleSection/CollapsibleSectionPage').CollapsibleSectionPage,
@@ -39,12 +39,6 @@ export const AppDefinition: IAppDefinition = {
           key: 'FolderCover',
           name: 'FolderCover',
           url: '#/examples/foldercover'
-        },
-        {
-          component: require<any>('../components/Form/FormPage').FormPage,
-          key: 'Form',
-          name: 'Form',
-          url: '#/examples/form'
         },
         {
           component: require<any>('../components/FileTypeIcon/FileTypeIconPage').FileTypeIconPage,
@@ -99,18 +93,6 @@ export const AppDefinition: IAppDefinition = {
           key: 'Slots',
           name: 'Slots',
           url: '#/examples/slots'
-        },
-        {
-          component: require<any>('../components/Stack/StackPage').StackPage,
-          key: 'Stack',
-          name: 'Stack',
-          url: '#/examples/stack'
-        },
-        {
-          component: require<any>('../components/Text/TextPage').TextPage,
-          key: 'Text',
-          name: 'Text',
-          url: '#/examples/text'
         },
         {
           component: require<any>('../components/Tile/TilePage').TilePage,
