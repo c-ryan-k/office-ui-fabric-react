@@ -1,6 +1,20 @@
 # Change Log - @uifabric/utilities
 
-This log was last generated on Tue, 05 Mar 2019 17:33:41 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Mar 2019 12:31:43 GMT and should not be manually modified.
+
+## 6.35.0
+Tue, 12 Mar 2019 12:31:43 GMT
+
+### Minor changes
+
+- Focus utilities: Fix tabbable element issue and add optional argument.
+
+## 6.34.0
+Wed, 06 Mar 2019 13:27:18 GMT
+
+### Minor changes
+
+- Utilities for managing componentRef initialization added.
 
 ## 6.33.0
 Tue, 05 Mar 2019 17:33:41 GMT
