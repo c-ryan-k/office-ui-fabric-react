@@ -1,7 +1,7 @@
 import { ITeachingBubbleStyleProps, ITeachingBubbleStyles } from 'office-ui-fabric-react/lib/TeachingBubble';
 import { BaseColors } from '../AzureColors';
-import { Depths } from '../AzureDepths';
-import * as StyleConstants from '../Constants';
+import { Depths } from '../../common/AzureDepths';
+import * as StyleConstants from '../../common/Constants';
 
 export const TeachingBubbleStyles = (props: ITeachingBubbleStyleProps): Partial<ITeachingBubbleStyles> => {
   const { theme } = props;

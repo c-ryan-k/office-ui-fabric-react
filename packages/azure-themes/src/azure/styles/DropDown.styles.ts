@@ -1,7 +1,7 @@
 import { IDropdownStyleProps, IDropdownStyles } from 'office-ui-fabric-react/lib/Dropdown';
-import { FontSizes } from '../AzureType';
-import { Depths } from '../AzureDepths';
-import * as StyleConstants from '../Constants';
+import { FontSizes } from '../../common/AzureType';
+import { Depths } from '../../common/AzureDepths';
+import * as StyleConstants from '../../common/Constants';
 
 export const DropdownStyles = (props: IDropdownStyleProps): Partial<IDropdownStyles> => {
   const { disabled, theme, hasError, isOpen } = props;

@@ -1,6 +1,6 @@
 import { ITagItemStyleProps, ITagItemStyles } from 'office-ui-fabric-react/lib/Pickers';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
-import { transparent } from '../Constants';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
+import { transparent } from '../../common/Constants';
 
 export const TagItemStyles = (props: ITagItemStyleProps): Partial<ITagItemStyles> => {
   const { theme, selected } = props;

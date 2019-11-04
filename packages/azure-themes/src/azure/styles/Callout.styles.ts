@@ -1,7 +1,7 @@
 import { ICalloutContentStyleProps, ICalloutContentStyles } from 'office-ui-fabric-react/lib/Callout';
-import { Depths } from '../AzureDepths';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { Depths } from '../../common/AzureDepths';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const CalloutContentStyles = (props: ICalloutContentStyleProps): Partial<ICalloutContentStyles> => {
   const { theme } = props;

@@ -1,8 +1,8 @@
 import { ITheme } from 'office-ui-fabric-react/lib/Styling';
-import { Depths } from '../AzureDepths';
+import { Depths } from '../../common/AzureDepths';
 import { IComboBoxStyles } from 'office-ui-fabric-react/lib/ComboBox';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const ComboBoxStyles = (theme: ITheme): Partial<IComboBoxStyles> => {
   const { semanticColors } = theme;

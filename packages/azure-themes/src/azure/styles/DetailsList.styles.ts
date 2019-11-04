@@ -5,9 +5,9 @@ import {
   IDetailsListStyleProps,
   IDetailsListStyles
 } from 'office-ui-fabric-react/lib/DetailsList';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
   const { theme, checked } = props;

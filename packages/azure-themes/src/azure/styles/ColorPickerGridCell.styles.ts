@@ -1,5 +1,5 @@
 import { IColorPickerGridCellStyleProps, IColorPickerGridCellStyles } from 'office-ui-fabric-react/lib/SwatchColorPicker';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const ColorPickerGridCellStyles = (props: IColorPickerGridCellStyleProps): Partial<IColorPickerGridCellStyles> => {
   const { theme, selected, circle } = props;

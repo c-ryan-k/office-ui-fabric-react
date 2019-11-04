@@ -1,6 +1,6 @@
 import { ISliderStyleProps, ISliderStyles } from 'office-ui-fabric-react/lib/Slider';
-import * as StyleConstants from '../Constants';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import * as StyleConstants from '../../common/Constants';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 const SLIDER_BOX_DIMENSION: number = 8;
 const SLIDER_DIAMETER: number = 16;

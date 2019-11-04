@@ -1,5 +1,5 @@
 import { ISuggestionsStyleProps, ISuggestionsStyles } from 'office-ui-fabric-react/lib/Pickers';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const SuggestionsStyles = (props: ISuggestionsStyleProps): Partial<ISuggestionsStyles> => {
   const { theme } = props;

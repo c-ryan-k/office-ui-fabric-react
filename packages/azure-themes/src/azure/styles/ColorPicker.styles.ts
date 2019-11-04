@@ -6,8 +6,8 @@ import {
   IColorSliderStyleProps,
   IColorSliderStyles
 } from 'office-ui-fabric-react/lib/ColorPicker';
-import { Depths } from '../AzureDepths';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { Depths } from '../../common/AzureDepths';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const ColorPickerStyles = (props: IColorPickerStyleProps): Partial<IColorPickerStyles> => {
   return {

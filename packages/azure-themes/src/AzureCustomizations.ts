@@ -1,18 +1,19 @@
 import { ICustomizations } from 'office-ui-fabric-react';
 import { AzureThemeDark } from './azure/AzureThemeDark';
-import { AzureThemeLight } from './azure/AzureThemeLight';
-import { AzureStyleSettings } from './azure/AzureStyleSettings';
+import { AzureThemeLight } from './light/AzureThemeLight';
+import { DarkStyleSettings } from './azure/AzureStyleSettings';
+import { LightStyleSettings } from './light/LightStyleSettings';
 
 export const AzureCustomizationsDark: ICustomizations = {
   settings: {
     theme: { ...AzureThemeDark }
   },
-  scopedSettings: { ...AzureStyleSettings(AzureThemeDark) }
+  scopedSettings: { ...DarkStyleSettings(AzureThemeDark) }
 };
 
 export const AzureCustomizationsLight: ICustomizations = {
   settings: {
     theme: { ...AzureThemeLight }
   },
-  scopedSettings: { ...AzureStyleSettings(AzureThemeLight) }
+  scopedSettings: { ...LightStyleSettings(AzureThemeLight) }
 };

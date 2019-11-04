@@ -1,6 +1,6 @@
 import { ILabelStyleProps, ILabelStyles } from 'office-ui-fabric-react/lib/Label';
-import { FontSizes } from '../AzureType';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const LabelStyles = (props: ILabelStyleProps): Partial<ILabelStyles> => {
   const { theme, disabled } = props;

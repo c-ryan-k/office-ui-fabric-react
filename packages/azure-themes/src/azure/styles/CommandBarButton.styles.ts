@@ -1,7 +1,7 @@
 import { ITheme } from 'office-ui-fabric-react';
 import { getFocusStyle } from 'office-ui-fabric-react/lib/Styling';
 import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
-import { FontSizes } from '../AzureType';
+import { FontSizes } from '../../common/AzureType';
 
 export const CommandBarButtonStyles = (theme: ITheme): Partial<IButtonStyles> => {
   const { semanticColors } = theme;

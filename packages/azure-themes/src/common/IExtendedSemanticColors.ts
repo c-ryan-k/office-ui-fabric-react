@@ -18,4 +18,11 @@ export interface IExtendedSemanticColors extends ISemanticColors {
   statusWarningBackground: string;
   statusWarningText: string;
   statusWarningIcon: string;
+  statusSevereWarningBackground: string;
+  statusSevereWarningText: string;
+  statusSevereWarningIcon: string;
+  checkboxSelectedBackground: string;
+  checkboxSelectedHoverBackground: string;
+  checkboxCheckHover: string;
+  checkboxCheckSelected: string;
 }

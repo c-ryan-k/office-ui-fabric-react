@@ -1,7 +1,7 @@
 import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
 import { ITheme } from 'office-ui-fabric-react/lib/Styling';
-import * as StyleConstants from '../Constants';
-import { FontSizes } from '../AzureType';
+import * as StyleConstants from '../../common/Constants';
+import { FontSizes } from '../../common/AzureType';
 
 export const ActionButtonStyles = (theme: ITheme): Partial<IButtonStyles> => {
   const { semanticColors } = theme;

@@ -1,5 +1,5 @@
-import { FontSizes } from '../AzureType';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 import { IToggleStyleProps, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
 import { BaseColors } from '../AzureColors';
 

@@ -1,5 +1,5 @@
 import { IPanelStyles, IPanelStyleProps } from 'office-ui-fabric-react';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 import { BaseColors } from '../AzureColors';
 
 export const PanelStyles = (props: IPanelStyleProps): Partial<IPanelStyles> => {

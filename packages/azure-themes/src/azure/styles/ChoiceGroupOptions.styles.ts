@@ -1,7 +1,7 @@
 import { IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const ChoiceGroupOptionStyles = (props: IChoiceGroupOptionStyleProps): Partial<IChoiceGroupOptionStyles> => {
   const { checked, disabled, theme, hasIcon, hasImage } = props;

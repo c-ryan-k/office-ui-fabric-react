@@ -1,5 +1,5 @@
 import { INavStyleProps, INavStyles } from 'office-ui-fabric-react/lib/Nav';
-import { borderNone } from '../Constants';
+import { borderNone } from '../../common/Constants';
 
 export const NavStyles = (props: INavStyleProps): Partial<INavStyles> => {
   const { theme } = props;

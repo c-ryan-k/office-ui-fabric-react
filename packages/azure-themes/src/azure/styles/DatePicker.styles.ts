@@ -1,5 +1,5 @@
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 import { IDatePickerStyles, IDatePickerStyleProps } from 'office-ui-fabric-react/lib/DatePicker';
 
 export const DatePickerStyles = (props: IDatePickerStyleProps): Partial<IDatePickerStyles> => {

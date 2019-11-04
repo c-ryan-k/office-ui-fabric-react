@@ -1,7 +1,7 @@
 import { IBasePickerStyles, IBasePickerStyleProps } from 'office-ui-fabric-react/lib/Pickers';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const TagPickerStyles = (props: IBasePickerStyleProps): Partial<IBasePickerStyles> => {
   const { theme } = props;

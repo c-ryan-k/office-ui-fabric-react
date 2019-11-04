@@ -1,8 +1,8 @@
 import { createTheme, ITheme } from 'office-ui-fabric-react';
-import { CommonSemanticColors, DarkSemanticColors } from './AzureColors';
-import { IExtendedSemanticColors } from './IExtendedSemanticColors';
-import { FontSizes } from './AzureType';
-import * as StyleConstants from './Constants';
+import { CommonSemanticColors, DarkSemanticColors, StatusColors } from './AzureColors';
+import { IExtendedSemanticColors } from '../common/IExtendedSemanticColors';
+import { FontSizes } from '../common/AzureType';
+import * as StyleConstants from '../common/Constants';
 
 const darkExtendedSemanticColors: Partial<IExtendedSemanticColors> = {
   bodyBackground: DarkSemanticColors.background,
@@ -49,24 +49,29 @@ const darkExtendedSemanticColors: Partial<IExtendedSemanticColors> = {
   primaryButtonTextHovered: DarkSemanticColors.primaryButton.hover.text,
   primaryButtonTextPressed: DarkSemanticColors.primaryButton.pressed.text,
   variantBorder: CommonSemanticColors.dividers.lineSeparator,
-  // extended
   controlAccent: DarkSemanticColors.controlOutlines.accent,
   controlOutline: DarkSemanticColors.controlOutlines.rest,
   controlOutlineDisabled: DarkSemanticColors.controlOutlines.disabled,
   controlOutlineHovered: DarkSemanticColors.controlOutlines.hover,
   labelText: DarkSemanticColors.text.label,
-  statusErrorBackground: DarkSemanticColors.statusBar.error,
+  statusErrorBackground: StatusColors.Dark.errorBackground,
   statusErrorText: DarkSemanticColors.text.body,
-  statusErrorIcon: CommonSemanticColors.icons.error,
-  statusInformationBackground: DarkSemanticColors.statusBar.information,
+  statusErrorIcon: StatusColors.Dark.error,
+  statusInformationBackground: StatusColors.Dark.infoBackground,
   statusInformationText: DarkSemanticColors.text.body,
-  statusInformationIcon: CommonSemanticColors.icons.information,
-  statusSuccessBackground: DarkSemanticColors.statusBar.okay,
+  statusInformationIcon: StatusColors.Dark.info,
+  statusSuccessBackground: StatusColors.Dark.successBackground,
   statusSuccessText: DarkSemanticColors.text.body,
-  statusSuccessIcon: CommonSemanticColors.icons.okay,
-  statusWarningBackground: DarkSemanticColors.statusBar.warning,
+  statusSuccessIcon: StatusColors.Dark.success,
+  statusWarningBackground: StatusColors.Dark.warningBackground,
   statusWarningText: DarkSemanticColors.text.body,
-  statusWarningIcon: CommonSemanticColors.icons.warning
+  statusWarningIcon: StatusColors.Dark.warning,
+  statusSevereWarningBackground: StatusColors.Dark.warningBackground,
+  statusSevereWarningIcon: StatusColors.Dark.warning,
+  checkboxCheckHover: DarkSemanticColors.background,
+  checkboxCheckSelected: DarkSemanticColors.text.body,
+  checkboxSelectedBackground: DarkSemanticColors.background,
+  checkboxSelectedHoverBackground: DarkSemanticColors.background
 };
 
 export const AzureThemeDark: ITheme = createTheme({

@@ -1,5 +1,5 @@
 import { IRatingStyleProps, IRatingStyles } from 'office-ui-fabric-react/lib/Rating';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 
 export const RatingStyles = (props: IRatingStyleProps): Partial<IRatingStyles> => {
   const { disabled, readOnly, theme } = props;

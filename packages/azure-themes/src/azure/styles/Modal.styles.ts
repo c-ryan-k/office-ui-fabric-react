@@ -1,7 +1,7 @@
 import { IModalStyles, IModalStyleProps } from 'office-ui-fabric-react';
-import { Depths } from '../AzureDepths';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { Depths } from '../../common/AzureDepths';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const ModalStyles = (props: IModalStyleProps): Partial<IModalStyles> => {
   const { theme } = props;

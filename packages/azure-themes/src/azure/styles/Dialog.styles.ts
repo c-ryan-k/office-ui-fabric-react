@@ -4,8 +4,8 @@ import {
   IDialogFooterStyleProps,
   IDialogFooterStyles
 } from 'office-ui-fabric-react/lib/Dialog';
-import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
-import { FontSizes } from '../AzureType';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
+import { FontSizes } from '../../common/AzureType';
 import { BaseColors } from '../AzureColors';
 
 export const DialogContentStyles = (props: IDialogContentStyleProps): Partial<IDialogContentStyles> => {

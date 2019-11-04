@@ -1,6 +1,6 @@
 import { IPivotStyleProps, IPivotStyles } from 'office-ui-fabric-react/lib/Pivot';
-import { FontSizes } from '../AzureType';
-import * as StyleConstants from '../Constants';
+import { FontSizes } from '../../common/AzureType';
+import * as StyleConstants from '../../common/Constants';
 
 export const PivotStyles = (props: IPivotStyleProps): Partial<IPivotStyles> => {
   const { theme, rootIsTabs, rootIsLarge } = props;

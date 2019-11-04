@@ -4,7 +4,7 @@ import {
   IPlainCardStyleProps,
   IPlainCardStyles
 } from 'office-ui-fabric-react/lib/HoverCard';
-import * as StyleConstants from '../Constants';
+import * as StyleConstants from '../../common/Constants';
 
 export const ExpandingCardStyles = (props: IExpandingCardStyleProps): Partial<IExpandingCardStyles> => {
   const { theme } = props;
