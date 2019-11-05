@@ -5,7 +5,7 @@ import { FontSizes } from '../../common/AzureType';
 export const DefaultButtonStyles = (theme: ITheme): Partial<IButtonStyles> => {
   return {
     root: {
-      fontSize: FontSizes.size12,
+      fontSize: FontSizes.size13,
       height: 24
     },
     splitButtonContainer: {

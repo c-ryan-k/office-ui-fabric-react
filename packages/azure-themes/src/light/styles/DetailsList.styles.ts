@@ -1,11 +1,19 @@
 import { ICheckStyleProps, ICheckStyles } from 'office-ui-fabric-react/lib/Check';
-import { IDetailsListStyleProps, IDetailsListStyles } from 'office-ui-fabric-react/lib/DetailsList';
+// tslint:disable-next-line: max-line-length
+import {
+  IDetailsListStyleProps,
+  IDetailsListStyles,
+  IDetailsRowStyleProps,
+  IDetailsRowStyles,
+  IDetailsColumnStyles
+} from 'office-ui-fabric-react/lib/DetailsList';
 import * as StyleConstants from '../../common/Constants';
 import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors.ts';
+import { FontSizes } from '../../common';
 
 export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
   const { theme, checked } = props;
-  const semanticColors = theme.semanticColors as IExtendedSemanticColors;
+  const extendedSemanticColors = theme.semanticColors as IExtendedSemanticColors;
 
   return {
     root: [
@@ -14,7 +22,7 @@ export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
           ':hover': {
             selectors: {
               '.ms-Check-circle': {
-                backgroundColor: semanticColors.checkboxSelectedHoverBackground
+                backgroundColor: extendedSemanticColors.checkboxSelectedHoverBackground
               }
             }
           }
@@ -24,22 +32,23 @@ export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
     circle: [
       {
         fontSize: 0,
-        backgroundColor: semanticColors.listBackground,
-        border: `${StyleConstants.borderWidth} ${StyleConstants.borderSolid} ${semanticColors.bodyText}`
+        backgroundColor: extendedSemanticColors.listBackground,
+        border: `${StyleConstants.borderWidth} ${StyleConstants.borderSolid} ${extendedSemanticColors.bodyText}`,
+        borderRadius: 2
       },
       checked && {
-        backgroundColor: semanticColors.checkboxSelectedBackground,
-        color: semanticColors.checkboxCheckSelected
+        backgroundColor: extendedSemanticColors.checkboxSelectedBackground,
+        color: extendedSemanticColors.checkboxCheckSelected
       }
     ],
     check: [
       checked && {
-        color: semanticColors.checkboxCheckSelected
+        color: extendedSemanticColors.checkboxCheckSelected
       },
       !checked && {
         selectors: {
           ':hover': {
-            color: semanticColors.checkboxCheckHover
+            color: extendedSemanticColors.checkboxCheckHover
           }
         }
       },
@@ -52,11 +61,32 @@ export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
     ]
   };
 };
-
+export const DetailsRowStyles = (props: IDetailsRowStyleProps): Partial<IDetailsRowStyles> => {
+  return {
+    isRowHeader: {
+      fontSize: FontSizes.size13
+    },
+    cell: {
+      fontSize: FontSizes.size13
+    }
+  };
+};
 export const DetailsListStyles = (props: IDetailsListStyleProps): Partial<IDetailsListStyles> => {
   return {
     root: {
+      fontSize: FontSizes.size13,
       borderTop: StyleConstants.borderNone
+    },
+    contentWrapper: {
+      fontSize: FontSizes.size13
+    }
+  };
+};
+export const DetailsColumnStyles = (): Partial<IDetailsColumnStyles> => {
+  return {
+    cellName: {
+      fontWeight: 'normal',
+      fontSize: FontSizes.size13
     }
   };
 };

@@ -1,5 +1,5 @@
 import { createTheme, ITheme } from 'office-ui-fabric-react';
-import { CommonSemanticColors, DarkSemanticColors, StatusColors } from './AzureColors';
+import { CommonSemanticColors, DarkSemanticColors, StatusColors, BaseColors } from './AzureColors';
 import { IExtendedSemanticColors } from '../common/IExtendedSemanticColors';
 import { FontSizes } from '../common/AzureType';
 import * as StyleConstants from '../common/Constants';
@@ -34,9 +34,9 @@ const darkExtendedSemanticColors: Partial<IExtendedSemanticColors> = {
   linkHovered: DarkSemanticColors.text.hyperlink,
   listBackground: DarkSemanticColors.background,
   listHeaderBackgroundPressed: DarkSemanticColors.item.hover,
-  listItemBackgroundChecked: DarkSemanticColors.item.select,
-  listItemBackgroundCheckedHovered: DarkSemanticColors.item.select,
-  listItemBackgroundHovered: DarkSemanticColors.item.hover,
+  listItemBackgroundChecked: BaseColors.GRAY_808080_050,
+  listItemBackgroundCheckedHovered: BaseColors.GRAY_808080_050,
+  listItemBackgroundHovered: BaseColors.GRAY_808080_025,
   listText: DarkSemanticColors.text.body,
   menuItemBackgroundHovered: DarkSemanticColors.item.hover,
   menuItemBackgroundPressed: DarkSemanticColors.item.select,
@@ -70,7 +70,7 @@ const darkExtendedSemanticColors: Partial<IExtendedSemanticColors> = {
   statusSevereWarningIcon: StatusColors.Dark.warning,
   checkboxCheckHover: DarkSemanticColors.background,
   checkboxCheckSelected: DarkSemanticColors.text.body,
-  checkboxSelectedBackground: DarkSemanticColors.background,
+  checkboxSelectedBackground: BaseColors.GRAY_404040,
   checkboxSelectedHoverBackground: DarkSemanticColors.background
 };
 

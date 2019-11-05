@@ -45,6 +45,7 @@ export namespace BaseColors {
   export const GRAY_808080_015 = 'rgba(128, 128, 128, .15)';
   export const GRAY_808080_025 = 'rgba(128, 128, 128, .25)';
   export const GRAY_808080_070 = 'rgba(128, 128, 128, .70)';
+  export const GRAY_808080_050 = 'rgba(128, 128, 128, .50)';
   export const BLUE_55B3FF_010 = 'rgba(85, 179, 255, .10)';
   export const BLUE_55B3FF_020 = 'rgba(85, 179, 255, .20)';
 
@@ -239,76 +240,5 @@ export const DarkSemanticColors: IAzureSemanticColors = {
   shimmer: {
     primary: BaseColors.GRAY_808080,
     secondary: BaseColors.GRAY_404040
-  }
-};
-
-export const LightSemanticColors: IAzureSemanticColors = {
-  background: BaseColors.WHITE,
-  text: {
-    heading: BaseColors.GRAY_161616,
-    body: BaseColors.GRAY_161616,
-    value: BaseColors.GRAY_161616,
-    icon: BaseColors.GRAY_161616,
-    label: BaseColors.GRAY_747474,
-    disabled: BaseColors.GRAY_808080_070,
-    hyperlink: BaseColors.BLUE_015CDA,
-    success: BaseColors.GREEN_428000,
-    error: BaseColors.RED_E00B1C,
-    placeholder: BaseColors.GRAY_808080
-  },
-  statusBar: {
-    okay: StatusColors.Light.success,
-    error: StatusColors.Light.error,
-    warning: StatusColors.Light.warning,
-    information: StatusColors.Light.info,
-    upsell: StatusColors.Light.upsell
-  },
-  primaryButton: {
-    rest: {
-      background: BaseColors.BLUE_015CDA,
-      text: BaseColors.WHITE // verify color
-    },
-    hover: {
-      background: BaseColors.BLUE_016AFE,
-      text: BaseColors.WHITE // verify color
-    },
-    pressed: {
-      background: BaseColors.BLUE_014DB7,
-      text: BaseColors.WHITE // verify color
-    }
-  },
-  disabledButton: {
-    background: BaseColors.GRAY_808080_010,
-    text: BaseColors.GRAY_808080_070 // get color
-  },
-  secondaryButton: {
-    rest: {
-      background: BaseColors.WHITE,
-      border: BaseColors.BLUE_015CDA
-    },
-    hover: {
-      background: BaseColors.GRAY_808080_010, // get color
-      border: BaseColors.BLUE_016AFE
-    },
-    pressed: {
-      background: BaseColors.GRAY_808080_010, // get color
-      border: BaseColors.BLUE_014DB7
-    }
-  },
-  controlOutlines: {
-    rest: BaseColors.GRAY_808080,
-    disabled: BaseColors.GRAY_808080_070,
-    hover: BaseColors.GRAY_161616,
-    accent: BaseColors.BLUE_015CDA,
-    error: BaseColors.RED_E00B1C,
-    dirty: BaseColors.PURPLE_8A2DA5
-  },
-  item: {
-    hover: BaseColors.BLUE_55B3FF_010,
-    select: BaseColors.BLUE_55B3FF_020
-  },
-  shimmer: {
-    primary: BaseColors.GRAY_F7F7F7,
-    secondary: BaseColors.GRAY_DFDFDF
   }
 };

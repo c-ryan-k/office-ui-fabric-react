@@ -24,9 +24,13 @@ const lightExtendedSemanticColors: Partial<IExtendedSemanticColors> = {
 
 export const AzureThemeLight: ITheme = createTheme({
   fonts: {
+    small: {
+      fontFamily: StyleConstants.fontFamily,
+      fontSize: FontSizes.size13
+    },
     medium: {
       fontFamily: StyleConstants.fontFamily,
-      fontSize: FontSizes.size12
+      fontSize: FontSizes.size13
     }
   },
   palette: {
