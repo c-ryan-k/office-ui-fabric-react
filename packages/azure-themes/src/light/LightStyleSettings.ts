@@ -4,6 +4,7 @@ import { TextFieldStyles } from './styles/TextField.styles';
 import { MessageBarStyles } from './styles/MessageBar.styles';
 import { DefaultButtonStyles } from './styles/DefaultButton.styles';
 import { CheckboxStyles } from './styles/Checkbox.styles.ts';
+import { ToggleStyles } from './styles/Toggle.styles.ts';
 
 export const LightStyleSettings = (theme: ITheme) => {
   return {
@@ -30,6 +31,9 @@ export const LightStyleSettings = (theme: ITheme) => {
     },
     TextField: {
       styles: TextFieldStyles
+    },
+    Toggle: {
+      styles: ToggleStyles
     }
   };
 };

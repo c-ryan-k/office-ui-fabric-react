@@ -230,7 +230,7 @@ export const DarkSemanticColors: IAzureSemanticColors = {
     rest: BaseColors.GRAY_808080,
     disabled: BaseColors.GRAY_808080_070,
     hover: BaseColors.WHITE,
-    accent: BaseColors.BLUE_4894FE, // button in radio, check, et. al.
+    accent: BaseColors.BLUE_257FFE, // button in radio, check, et. al.
     error: BaseColors.RED_F63747,
     dirty: BaseColors.PURPLE_C87FDC
   },

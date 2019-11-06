@@ -2,6 +2,7 @@ import { FontSizes } from '../../common/AzureType';
 import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 import { IToggleStyleProps, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
 import { BaseColors } from '../AzureColors';
+import { borderWidthError } from '../../common/Constants.ts';
 
 export const ToggleStyles = (props: IToggleStyleProps): Partial<IToggleStyles> => {
   const { theme, disabled, checked } = props;
@@ -12,23 +13,50 @@ export const ToggleStyles = (props: IToggleStyleProps): Partial<IToggleStyles> =
     container: {},
     pill: [
       {
+        height: 18,
         backgroundColor: semanticColors.bodyBackground
       },
       checked && {
         backgroundColor: extendedSemanticColors.controlAccent
       },
+      !checked &&
+        !disabled && {
+          borderColor: BaseColors.GRAY_DFDFDF,
+          selectors: {
+            ':hover': {
+              borderColor: semanticColors.bodyText
+            }
+          }
+        },
       disabled && {
         backgroundColor: extendedSemanticColors.controlOutlineDisabled
       },
       !checked &&
         disabled && {
           backgroundColor: semanticColors.disabledBackground
+        },
+      checked &&
+        !disabled && {
+          selectors: {
+            ':hover': {
+              backgroundColor: BaseColors.BLUE_6CA9FE
+            }
+          }
         }
     ],
     // toggle circle
     thumb: [
       {
-        backgroundColor: extendedSemanticColors.controlOutlineHovered
+        borderWidth: 0,
+        position: 'relative',
+        height: 10,
+        width: 10
+      },
+      checked && {
+        right: 2
+      },
+      !checked && {
+        left: 2
       },
       disabled && {
         backgroundColor: semanticColors.disabledBodyText
@@ -36,6 +64,10 @@ export const ToggleStyles = (props: IToggleStyleProps): Partial<IToggleStyles> =
       checked &&
         !disabled && {
           backgroundColor: BaseColors.WHITE
+        },
+      !checked &&
+        !disabled && {
+          backgroundColor: BaseColors.GRAY_DFDFDF
         }
     ],
     root: [
