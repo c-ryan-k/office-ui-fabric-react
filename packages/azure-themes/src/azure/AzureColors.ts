@@ -3,6 +3,7 @@ import { IAzureSemanticColors } from './IAzureSemanticColors';
 /* tslint:disable:no-any */
 export namespace BaseColors {
   export const BLUE_CCE1FF = '#cce1ff';
+  export const BLUE_0089FA = '#0089fa';
   export const BLUE_016AFE = '#016afe';
   export const BLUE_015CDA = '#015cda';
   export const BLUE_014DB7 = '#014db7';
