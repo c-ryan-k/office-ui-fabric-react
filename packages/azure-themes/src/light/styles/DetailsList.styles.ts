@@ -8,12 +8,13 @@ import {
   IDetailsColumnStyles
 } from 'office-ui-fabric-react/lib/DetailsList';
 import * as StyleConstants from '../../common/Constants';
-import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors.ts';
+import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 import { FontSizes } from '../../common';
 
 export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
   const { theme, checked } = props;
-  const extendedSemanticColors = theme.semanticColors as IExtendedSemanticColors;
+  const { semanticColors } = theme;
+  const extendedSemanticColors = semanticColors as IExtendedSemanticColors;
 
   return {
     root: [
@@ -32,8 +33,8 @@ export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {
     circle: [
       {
         fontSize: 0,
-        backgroundColor: extendedSemanticColors.listBackground,
-        border: `${StyleConstants.borderWidth} ${StyleConstants.borderSolid} ${extendedSemanticColors.bodyText}`,
+        backgroundColor: semanticColors.listBackground,
+        border: `${StyleConstants.borderWidth} ${StyleConstants.borderSolid} ${semanticColors.bodyText}`,
         borderRadius: 2
       },
       checked && {

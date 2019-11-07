@@ -1,5 +1,3 @@
-import { IAzureSemanticColors } from './IAzureSemanticColors';
-
 /* tslint:disable:no-any */
 export namespace FluentNeutralColors {
   export const black = '#000000';

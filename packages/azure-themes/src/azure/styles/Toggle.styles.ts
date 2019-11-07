@@ -2,7 +2,6 @@ import { FontSizes } from '../../common/AzureType';
 import { IExtendedSemanticColors } from '../../common/IExtendedSemanticColors';
 import { IToggleStyleProps, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
 import { BaseColors } from '../AzureColors';
-import { borderWidthError } from '../../common/Constants.ts';
 
 export const ToggleStyles = (props: IToggleStyleProps): Partial<IToggleStyles> => {
   const { theme, disabled, checked } = props;

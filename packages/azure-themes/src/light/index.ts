@@ -1,2 +1,2 @@
-export * from './AzureStyleSettings';
+export * from './LightStyleSettings';
 export * from './AzureThemeLight';

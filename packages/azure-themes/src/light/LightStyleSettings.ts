@@ -3,8 +3,8 @@ import { CheckStyles, DetailsListStyles, DetailsRowStyles, DetailsColumnStyles }
 import { TextFieldStyles } from './styles/TextField.styles';
 import { MessageBarStyles } from './styles/MessageBar.styles';
 import { DefaultButtonStyles } from './styles/DefaultButton.styles';
-import { CheckboxStyles } from './styles/Checkbox.styles.ts';
-import { ToggleStyles } from './styles/Toggle.styles.ts';
+import { CheckboxStyles } from './styles/Checkbox.styles';
+import { ToggleStyles } from './styles/Toggle.styles';
 
 export const LightStyleSettings = (theme: ITheme) => {
   return {
